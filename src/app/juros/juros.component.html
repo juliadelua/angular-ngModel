@@ -10,4 +10,13 @@
 <input type="number" step="1" [(ngModel)]="n" />
 
 <h3>Valor futuro (em R$):</h3>
-<table></table>
+<table>
+  <tr *ngFor="let item">
+    <th>n meses</th>
+    <th>Valor:</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>R$ {{ getJurosComp(n) }}</th>
+  </tr>
+</table>
