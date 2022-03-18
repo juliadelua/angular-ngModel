@@ -11,12 +11,12 @@
 
 <h3>Valor futuro (em R$):</h3>
 <table>
-  <tr *ngFor="let item">
-    <th>n meses</th>
+  <tr>
+    <th>Meses</th>
     <th>Valor:</th>
   </tr>
-  <tr>
-    <th></th>
+  <tr *ngFor="let item in getMeses(n);">
+    <th>{{ item }}</th>
     <th>R$ {{ getJurosComp(n) }}</th>
   </tr>
 </table>
