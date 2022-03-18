@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #cd0000;
+}
