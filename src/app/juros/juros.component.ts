@@ -24,12 +24,7 @@ export class JurosComponent implements OnInit {
     for (let i = 0; i < n; i++) {
       array.push(i + 1);
     }
-    console.log(array);
     return array;
-  }
-
-  getJuros() {
-    return this.vp * (1 + (this.j / 100) * this.n);
   }
 
   getJurosComp(meses: number) {
