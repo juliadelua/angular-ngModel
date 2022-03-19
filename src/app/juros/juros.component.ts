@@ -18,7 +18,16 @@ export class JurosComponent implements OnInit {
   }
 
   ngOnInit() {}
-  
+
+  getArray(n: number) {
+    let array = [];
+    for (let i = 0; i < n; i++) {
+      array.push(i + 1);
+    }
+    console.log(array);
+    return array;
+  }
+
   getJuros() {
     return this.vp * (1 + (this.j / 100) * this.n);
   }

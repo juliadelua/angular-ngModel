@@ -2,8 +2,52 @@
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+div {
+  margin-bottom: 5px;
+}
+input {
+  background-color: transparent;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  border: #e95d5d 1px solid;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+}
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #cd0000;
+  color: #e95d5d;
+}
+table {
+  border: 2px #e95d5d solid;
+}
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  border: 1px #e95d5d solid;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: #e95d5d 1px solid;
+}
+
+.menu a {
+  margin: 0px 10px;
+}
+
+h2,
+h3,
+h5 {
+  margin: 0px 0px 10px 10px;
 }

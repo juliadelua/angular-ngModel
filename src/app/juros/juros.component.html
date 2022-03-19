@@ -1,4 +1,4 @@
-<h2>JUROS</h2>
+<h2>Cálculo de Juros:</h2>
 
 <div>Valor presente (em R$):</div>
 <input type="number" step="0.01" [(ngModel)]="vp" />
@@ -15,8 +15,8 @@
     <th>Meses</th>
     <th>Valor:</th>
   </tr>
-  <tr>
-    <th>{{ n }}</th>
-    <th>R$ {{ getJurosComp(n) }}</th>
+  <tr *ngFor="let item of getArray(n)">
+    <td>{{ item }}</td>
+    <td>R$ {{ getJurosComp(item) }}</td>
   </tr>
 </table>
